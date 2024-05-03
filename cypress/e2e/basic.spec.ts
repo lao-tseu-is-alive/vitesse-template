@@ -7,13 +7,13 @@ context('Basic', () => {
     cy.url()
       .should('eq', 'http://localhost:3333/')
 
-    cy.contains('[Home Layout]')
+    cy.contains('[Default Layout]')
       .should('exist')
 
     cy.get('#input')
-      .type('Vitesse{Enter}')
+      .type('Carlos{Enter}')
       .url()
-      .should('eq', 'http://localhost:3333/hi/Vitesse')
+      .should('eq', 'http://localhost:3333/hi/Carlos')
 
     cy.contains('[Default Layout]')
       .should('exist')
