@@ -107,6 +107,8 @@ export default defineConfig({
         name: 'Vitesse',
         short_name: 'Vitesse',
         theme_color: '#ffffff',
+        start_url: 'https://gil.town/',
+        display: 'standalone',
         icons: [
           {
             src: '/pwa-192x192.png',

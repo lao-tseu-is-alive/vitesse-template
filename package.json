@@ -1,7 +1,10 @@
 {
+  "name": "vitesse-template",
   "type": "module",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@9.0.2",
+  "description": "A Vue 3 project template with Vite, Vue Router, Pinia, Vue I18n, and VueUse",
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333 --open",

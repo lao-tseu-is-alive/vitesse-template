@@ -1,13 +1,19 @@
 <script setup lang="ts">
+import project from '../package.json'
+
+const projectVersion = project.version
+const projectName = project.name
+const projectDescription = project.description
+
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: 'Vitesse',
+  title: `${projectName}: v${projectVersion}`,
   meta: [
     {
       name: 'description',
-      content: 'Opinionated Vite Starter Template',
+      content: `${projectDescription}`,
     },
     {
       name: 'theme-color',

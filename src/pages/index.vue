@@ -17,13 +17,19 @@ const { t } = useI18n()
 <template>
   <div>
     <div text-4xl>
-      <div i-carbon-campsite inline-block />
+      <!--      <div i-carbon-campsite inline-block /> -->
+      <div inline-block>
+        <svg
+          class="my-logo" xmlns="http://www.w3.org/2000/svg"
+          width="500" height="500" viewBox="-40 -40 80 80"
+        >
+          <circle r="39" />
+          <path d="M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38" fill="#fff" />
+          <circle cy="19" r="5" fill="#fff" />
+          <circle cy="-19" r="5" />
+        </svg>
+      </div>
     </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
     <p>
       <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
@@ -52,5 +58,5 @@ const { t } = useI18n()
 
 <route lang="yaml">
 meta:
-  layout: home
+layout: home
 </route>
